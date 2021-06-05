@@ -1,0 +1,116 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- mind_hack:
+    use_entities: true
+- at_mindhack:
+    use_entities: true
+- topics_ai:
+    use_entities: true
+- event_doubts1:
+    use_entities: true
+- mind_hack_all:
+    use_entities: true
+- rewards:
+    use_entities: true
+- thanks:
+    use_entities: true
+- team:
+    use_entities: true
+- botname:
+    use_entities: true
+- books:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a Iron man
+  utter_whatismindhack:
+  - text: Mindhack is a student run platform that tries to exchange knowledge between the geeks, the gladiators, the navalists, and students. We believe in democracy of ai and will always try to portray events surrounding in and around ai. Working together is our culture. We believe in anarchy and are always happy to have intellectual conversations. We are trying to build a community which could make a dent in this corporate lifes of robots.
+  utter_topicsinai:
+  - text: |-
+      State of art ML Algorithms
+       Neuromorphic Computing
+       Deep Learning
+       Reinforcement Learning
+       Robotic Navigation Systems
+       Computer Vision
+       Natural Language Processing
+       Recomender Systems
+       Game Theory and Computational Designs
+       Iot and AI
+  utter_mindhack:
+  - text: The Current events on time/date ,register on platform, anyone can participate
+  utter_event_doubt1:
+  - text: The event is for every  AI,ML,DL enthusiast. The summit is for everyone from noobs to pros.
+  utter_mindhack_all:
+  - text: |-
+      We have conducted 4 events so far
+       The Horizon Conference->A Meta Startup Conference
+       Explosion -> A cluster of mind bending sessions with students showing the cool side of AI and what it can do
+       Lightning Talks -> A mind compelling gathering of desperate learners and enthusiasts of Artificial Intelligence and the big daddy
+       Mindhack Summit->India's Biggest AI summit
+  utter_rewards:
+  - text: Apart from the various nuances and stages of AI and its applications you will be introduced to pop-culture swags
+  utter_thanks:
+  - text: |-
+      Glad that I could be of help to you!
+      Bye
+  utter_ask_again:
+  - text: Okay! Let's start again, please tell me what do you need?
+  - text: |-
+      No issues! Let's try this again.
+       Please repeat your query?
+  utter_did_that_help:
+  - text: Did that help you?
+  - text: I hope that solved your query
+  utter_team:
+  - text: |-
+      Founder : Dr.Sibi Chakaravarthy 
+      Pranav Kompally 
+      Sudhendra Kambhamettu 
+      Team: 
+      Gautam Galada 
+      Sanjana Joshi 
+      Kalive Pratyusha 
+      Arnav Panigrahi 
+      Vineeth 
+      Sathya Vemulapalli
+  utter_bname:
+  - text: The Mindhack Team
+  utter_book:
+  - text: |-
+      The Almanack Of Naval Ravikant
+       Deep Learning : Ian Goodfellow
+       You're Joking Mr.Feynman!
+actions: []
+forms: {}
+e2e_actions: []
